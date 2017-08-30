@@ -6,7 +6,7 @@ function getWeather() {
     var city = document.getElementById('city').value;
     var state = document.getElementById('state').value;
     // Assign custom city, state values to weather API via inputs
-    var weatherString = 'http://api.wunderground.com/api/d7d5bd4240c6178f/conditions/q/' + state + '/' + city + '.json';
+    var weatherString = 'http://api.wunderground.com/api/YOUR_API_KEY/conditions/q/' + state + '/' + city + '.json';
     weather.open('GET', weatherString, false);
     weather.send(null);
     // Parsing the response JSON object and getting the required weather data - assigning them to variables
